@@ -20,7 +20,7 @@ export const MovieTrailer = ({ movieId }) => {
   const movieTrailer = trailer.find(
     (video) => video.name === "Official Trailer"
   );
-  console.log(trailer);
+
   return (
     <Dialog>
       <DialogTrigger asChild>

@@ -2,6 +2,7 @@ import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Input } from "./ui/input";
 import { HeaderGenre } from "./HeaderGenre";
+import { ModeToggle } from "./ModeToggle";
 
 export const Header = () => {
   return (
@@ -20,6 +21,7 @@ export const Header = () => {
           />
         </div>
       </div>
+      <ModeToggle />
     </div>
   );
 };

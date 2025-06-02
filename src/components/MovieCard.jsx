@@ -12,7 +12,7 @@ export const MovieCard = ({ movie }) => {
           <span className="font-semibold">6.9</span>
           <span className="text-gray-500 ml-1">/10</span>
         </p>
-        <h2 className="text-md font-medium mt-1">{movie.title}</h2>
+        <h2 className="text-md font-medium mt-1"></h2>
       </div>
     </div>
   );

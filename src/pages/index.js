@@ -1,6 +1,6 @@
-import { Header } from "@/components/Header";
 import { MovieCarousel } from "@/components/MovieCarousel";
 import { Upcoming } from "@/components/Upcoming";
+import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function Home() {
