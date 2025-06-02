@@ -41,10 +41,10 @@ export const AllGenres = () => {
   }, []);
 
   const handleSelectGenre = (id) => {
-    const newGenreIds = setGenreIds((prev) =>
-      prev.includes(id) ? prev.filter((t) => t !== id) : [...prev, id]
-    );
-
+    const newGenreIds = genreIds.includes(id)
+      ? genreIds.filter((t) => t !== id)
+      : [...genreIds, id];
+    setGenreIds(newGenreIds);
     router.push(`/genres?genreIds=${newGenreIds}`);
   };
 
