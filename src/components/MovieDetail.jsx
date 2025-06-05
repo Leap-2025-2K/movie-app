@@ -4,6 +4,7 @@ import { MovieTrailer } from "./MovieTrailer";
 
 export const MovieDetail = ({ movieId }) => {
   const [movie, setMovie] = useState({});
+
   useEffect(() => {
     const getMovie = async () => {
       if (!movieId) return;

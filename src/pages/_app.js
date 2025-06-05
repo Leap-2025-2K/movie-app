@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }) {
     >
       <Header />
       <Component {...pageProps} />
+      <div className="">Footer</div>
     </ThemeProvider>
   );
 }

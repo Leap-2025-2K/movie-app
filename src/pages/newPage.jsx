@@ -14,8 +14,10 @@ const fetcher = (url) =>
 
 const Category = () => {
   const url = `${process.env.NEXT_PUBLIC_TMDB_BASE_URL}movie/574475/videos?language=en-US`;
+
   const { data, error, loading } = useSWR(url, fetcher);
 
   return <div>category</div>;
 };
+
 export default Category;
